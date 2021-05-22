@@ -9,13 +9,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "remax build -t wechat -w",
-    "build": "cross-env NODE_ENV=production remax build -t wechat"
+    "build": "cross-env NODE_ENV=production remax build -t wechat",
+    "gen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.19",
+    "graphql": "^15.5.0",
     "react": "^16.14.0",
     "remax": "^2.9.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.21.4",
     "@types/jest": "^26.0.23",
     "@types/react": "^16.14.2",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
@@ -34,6 +38,9 @@
     "jest": "^26.6.3",
     "prettier": "^2.3.0",
     "ts-jest": "^26.5.6",
-    "typescript": "^4.1.2"
+    "typescript": "^4.1.2",
+    "@graphql-codegen/typescript": "1.22.0",
+    "@graphql-codegen/typescript-operations": "1.17.16",
+    "@graphql-codegen/typescript-react-apollo": "2.2.4"
   }
 }
